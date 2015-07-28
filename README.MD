@@ -16,4 +16,5 @@ containing the data to access your SQL server.
 
 # License
 
-Released under the MIT License. Apache license also included, to comply with a few imported libraries.
+Released under the MIT License. Apache license also included, to comply with a few imported libraries;
+Eclipse Public License included due to usage of Jetty.
