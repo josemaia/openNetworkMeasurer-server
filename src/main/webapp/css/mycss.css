@@ -1,0 +1,63 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+#map{
+    height: 95%;
+}
+#nav{
+    width: 100%;
+    height: 5%;
+    text-align:center;
+}
+li,h1,h3,p,span {
+    font-family: 'Roboto', sans-serif;
+}
+form {
+    height: inherit;
+}
+h1{
+    text-align:center;
+}
+input[type=text]{
+    width: 15%;
+}
+#nav ul
+{
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    height: 5%;
+    width: 100%;
+}
+#nav ul li
+{
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.featurePopup{
+    text-align: center;
+}
+
+h3.featurePopup{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p.featurePopup{
+    font-size: 14px;
+}
+
+.myRadioContainer p {
+    font-weight:bold;
+}
+#loading {
+    position: absolute; width: 100%; height: 100%;
+    background: url('spinner.gif') no-repeat center center;
+    z-index: 9999;
+ }

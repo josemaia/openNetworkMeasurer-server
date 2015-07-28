@@ -1,0 +1,4 @@
+.idea/*
+out/**
+target/**
+src/main/java/maia/jose/measurementserver/myPrivateValues.java

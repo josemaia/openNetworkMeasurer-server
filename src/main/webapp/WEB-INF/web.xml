@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee"
+         id="WebApp_ID" version="3.0">
+    <display-name>Network Measurement Display</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>Android JSON Servlet</servlet-name>
+        <servlet-class>maia.jose.measurementserver.AndroidJSONServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Android JSON Servlet</servlet-name>
+        <url-pattern>/jsonservlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Bounding Box Request</servlet-name>
+        <servlet-class>maia.jose.measurementserver.BoundingBoxServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Bounding Box Request</servlet-name>
+        <url-pattern>/boundingbox</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Tower Bounding Box Request</servlet-name>
+        <servlet-class>maia.jose.measurementserver.TowerBoundingBoxServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Tower Bounding Box Request</servlet-name>
+        <url-pattern>/towerbox</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Tower Details Request</servlet-name>
+        <servlet-class>maia.jose.measurementserver.TowerInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Tower Details Request</servlet-name>
+        <url-pattern>/towervalues</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Leaderboard Request</servlet-name>
+        <servlet-class>maia.jose.measurementserver.LeaderboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Leaderboard Request</servlet-name>
+        <url-pattern>/leaderboard</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Operator Bounding Box Request</servlet-name>
+        <servlet-class>maia.jose.measurementserver.OperatorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Operator Bounding Box Request</servlet-name>
+        <url-pattern>/operators</url-pattern>
+    </servlet-mapping>
+</web-app>
