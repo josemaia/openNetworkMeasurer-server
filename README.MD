@@ -1,15 +1,12 @@
 # openNetworkMeasurer-server
 
-Hello! My name is José Maia, and this is the Java server I developed for the project in my Master's dissertation.
-
-The project is deployed at http://fedora-srv01.alunos.dcc.fc.up.pt/, although the servers have been spotty lately.
+This is the Java server I developed for the project in my Master's dissertation. It is destined to collect Wi-Fi/Cellular measurements from smartphones that perform the measuring, process those measurements, and display them to the web. The other half of the project is also available on [GitHub](https://github.com/josemaia/openNetworkMeasurer).
 
 # To run
 
 Tested on a Jetty installation on a Fedora-based server. 
 
-Compile locally, then put the jars anywhere on the server (run manually or with a cron script); put the WAR under the
-Jetty folder.
+Compile locally, then put the jars anywhere on the server (run manually or with a cron script); put the WAR under the Jetty folder.
 
 Furthermore, you need to implement the PrivateValues interface into a file called myPrivateValues, 
 containing the data to access your SQL server.
